@@ -17,15 +17,19 @@ type QueryResult struct {
 	Answer string `json:"Answer"`
 	Results []Result `json:"Results"`
 	RelatedTopics []RelatedTopic `json:"RelatedTopics"`
-	Infobox Infobox `json:"Infobox"`
-	ImageIsLogo int `json:"ImageIsLogo"`
+	InfoboxObj Infobox `json:"Infobox"`
+	InfoboxStr string `json:"Infobox"`
+	ImageIsLogoInt int `json:"ImageIsLogo"`
+	ImageIsLogoStr string `json:"ImageIsLogo"`
 	Definition string `json:"Definition"`
 	DefinitionURL string `json:"DefinitionURL"`
 	DefinitionSource string `json:"DefinitionSource"`
 	Heading string `json:"Heading"`
 	Image string `json:"Image"`
-	ImageWidth int `json:"ImageWidth"`
-	ImageHeight int `json:"ImageHeight"`
+	ImageWidthStr string `json:"ImageWidth"`
+	ImageHeightStr string `json:"ImageHeight"`
+	ImageWidthInt int `json:"ImageWidth"`
+	ImageHeightInt int `json:"ImageHeight"`
 	Abstract string `json:"Abstract"`
 	AbstractText string `json:"AbstractText"`
 	AbstractURL string `json:"AbstractURL"`
